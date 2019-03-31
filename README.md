@@ -1,4 +1,4 @@
-# lahacks-backend
+# Split Bananas
 
 Uses Python 3.7
 
