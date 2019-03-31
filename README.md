@@ -1,6 +1,6 @@
 # lahacks-backend
 
-Uses Python 2.7
+Uses Python 3.7
 
 ## Setup Instructions
 ```
