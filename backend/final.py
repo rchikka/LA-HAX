@@ -199,7 +199,7 @@ def localize_objects(path):
             		coords.append([int(vertex.x * img.shape[1]), int(vertex.y * img.shape[0])])
     return coords
 
-def main():
+def main(route):
 	if(not label_check(route)): 
 		return 3
 		# no  banana was found
@@ -224,4 +224,4 @@ def main():
 	#print(spot)
 	#return spot
 
-# main() # make sure route is established!
+# main(route) # make sure route is established!
