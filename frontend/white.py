@@ -12,16 +12,12 @@ def isWhite1(filename):
         print("Colored image")
 
 
-isWhite1("banana1.jpg")
-
-
 def isWhite2(filename):
     image = cv2.imread(filename)
     if cv2.countNonZero(image) == 0:
         return 0
     else:
         return 1
-
 
 # isWhite1("banana1.jpg")
 # isWhite2("banana1.jpg")
