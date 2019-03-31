@@ -47,6 +47,8 @@ def colorAnalyze(arc):
             red_conch = red_conch + 1
 
     comp = len(valid_count) - whitespace
+    if(comp == 0): 
+        comp = 1
 
     if (gre_conch / comp) > yellow_conch / comp:
         return 0  # print("unripe")
