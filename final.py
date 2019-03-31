@@ -141,7 +141,7 @@ def localize_objects(path):
 
     coords = []
     img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
-    print('Number of objects found: {}'.format(len(objects)))
+    #print('Number of objects found: {}'.format(len(objects)))
     for object_ in objects:
         if(object_.name == "Banana" or object_.name == "Food" or object_.name == "Fruit"):
         	for vertex in object_.bounding_poly.normalized_vertices:
@@ -157,5 +157,5 @@ vertices = localize_objects(route)
 #for i in range(len(vertices)):
 #	print("x-vertex: " + str(vertices[i][0]))
 #	print("y-vertex: " + str(vertices[i][1]))
-#for vertex in vertices:
-	#imagelist.append(cropBox)
+for i in range(len(vertices)-2):
+	imagelist.append(cropBox(route, [vertices[i], vertices[i+2]]))
