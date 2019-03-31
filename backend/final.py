@@ -8,7 +8,7 @@ from google.cloud import vision
 from google.cloud.vision import types
 
 #route =  bananaIMG.jpg
-route = '/home/rchikka/gcloud/visionex/a-Ripening-Stages-of-Banana-Fruit-1-7-Completely-unripe-to-completely-ripen.png'
+#route = '/home/rchikka/gcloud/visionex/a-Ripening-Stages-of-Banana-Fruit-1-7-Completely-unripe-to-completely-ripen.png'
 #route = '/home/rchikka/gcloud/visionex/190683-131-E796F1EE.jpg'
 
 def buffer(x, y):
@@ -224,4 +224,4 @@ def main():
 	#print(spot)
 	#return spot
 
-main()
+# main() # make sure route is established!
